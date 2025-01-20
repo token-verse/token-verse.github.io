@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-W3K3MQ8SK4"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-W3K3MQ8SK4');
+  </script>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="TokenVerse" />
+  <meta property="og:url" content="https://token-verse.github.io/" />
+  <meta property="og:title" content="TokenVerse" />
+  <meta property="og:description" content="Versatile Multi-concept Personalization in Token Modulation Space." />
+  <meta property="og:image" content="https://token-verse.github.io/static/images/teaser.jpg" />
+  <title>TokenVerse</title>
+
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+        rel="stylesheet">
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+  <link rel="stylesheet" href="./static/css/bulma.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="static/css/index.css">
+  <link rel="icon" href="./static/favicon.ico">
+
+  <script defer src="./static/js/fontawesome.all.min.js"></script>
+  <script src="./static/js/bulma-carousel.min.js"></script>
+  <script src="./static/js/bulma-slider.min.js"></script>
+  <script src="./static/js/index.js"></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=default'></script>
+
+  <link rel="preload" href="static/images/interactive/concepts/concept-122.jpeg" as="image">
+  <link rel="preload" href="static/images/interactive/concepts/concept-5.jpg" as="image">
+  <link rel="preload" href="static/images/interactive/concepts/concept-128.jpg" as="image">
+  <link rel="preload" href="static/images/interactive/concepts/concept-129.jpg" as="image">
+
+</head>
+<body>
+
+
+<section class="hero">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column has-text-centered">
+          <h1 class="title is-1 publication-title">TokenVerse: Versatile Multi-concept Personalization in Token Modulation Space</h1>
+
+          <br>
+
+          <div class="column has-text-centered">
+            <div class="publication-links">
+              <span class="link-block">
+                <a href="https://arxiv.org/abs/2501.12224"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="ai ai-arxiv"></i>
+                  </span>
+                  <span>arXiv</span>
+                </a>
+              </span>
+              <!-- Code Link. -->
+              <span class="link-block">
+                <a href=""
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fab fa-github"></i>
+                  </span>
+                  <span>Code (coming soon)</span>
+                  </a>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="hero teaser">
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+      <video autoplay muted loop playsinline width="100%">Your browser does not support the &lt;video&gt; tag.
+        <source src="static/videos/tokenverse.mp4"/>
+      </video>
+    </div>
+  </div>
+</section>
+
+<section class="section hero is-light is-small">
+    <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          <p>
+            We present TokenVerse -- a method for multi-concept personalization, leveraging a pre-trained text-to-image diffusion model. 
+            Our framework can disentangle complex visual elements and attributes from as little as a single image, while enabling seamless plug-and-play generation of combinations of concepts extracted from multiple images. 
+            As opposed to existing works, which are restricted either in the type or breadth of concepts they can handle, TokenVerse can handle multiple images with multiple concepts each, and supports a wide-range of concepts, including objects, accessories, materials, pose, and lighting. 
+            Our work exploits a DiT-based text-to-image model, in which the input text affects the generation through both attention and modulation (shift and scale). 
+            We observe that the modulation space is semantic and enables localized control over complex concepts. 
+            Building on this insight, we devise an optimization-based framework that takes as input an image and a text description, and finds for each word a distinct direction in modulation space. 
+            These directions can then be used to generate new images that combine the learned concepts in a desired configuration. 
+            We demonstrate the effectiveness of TokenVerse in challenging personalization settings, and showcase its advantages over existing methods.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="section carousel-sec">
+  <div class="container is-max-desktop is-centered has-text-centered">
+    <h2 class="title is-3">Results</h2>
+    <div class="container is-max-desktop">
+      <div class="hero-body">
+        <div id="results-carousel" class="carousel results-carousel" data-slides-to-show="1">
+          <img src="results/multi_concepts/13.png" style="width: 90%;">
+          <img loading="lazy" src="results/multi_concepts/14.png" style="width: 90%;">
+          <img loading="lazy" src="results/multi_concepts/15.png" style="width: 90%;">
+          <img loading="lazy" src="results/multi_concepts/16.png" style="width: 90%;">
+          <img loading="lazy" src="results/multi_concepts/17.png" style="width: 90%;">
+          <img loading="lazy" src="results/multi_concepts/18.png" style="width: 90%;">
+          <img loading="lazy" src="results/multi_concepts/19.png" style="width: 90%;">
+          <img loading="lazy" src="results/multi_concepts/20.png" style="width: 90%;">
+          <img loading="lazy" src="results/multi_concepts/21.png" style="width: 90%;">
+          <img loading="lazy" src="results/multi_concepts/22.png" style="width: 90%;">
+          <img loading="lazy" src="results/multi_concepts/23.png" style="width: 90%;">
+          <img loading="lazy" src="results/multi_concepts/24.png" style="width: 90%;">
+          <img loading="lazy" src="results/multi_concepts/25.png" style="width: 90%;">
+          <img loading="lazy" src="results/multi_concepts/26.png" style="width: 90%;">
+          <img loading="lazy" src="results/multi_concepts/27.png" style="width: 90%;">
+          <img loading="lazy" src="results/multi_concepts/28.png" style="width: 90%;">
+          <img loading="lazy" src="results/multi_concepts/01.png" style="width: 90%;">
+          <img loading="lazy" src="results/multi_concepts/02.png" style="width: 90%;">
+          <img loading="lazy" src="results/multi_concepts/03.png" style="width: 90%;">
+          <img loading="lazy" src="results/multi_concepts/04.png" style="width: 90%;">
+          <img loading="lazy" src="results/multi_concepts/05.png" style="width: 90%;">
+          <img loading="lazy" src="results/multi_concepts/06.png" style="width: 90%;">
+          <img loading="lazy" src="results/multi_concepts/07.png" style="width: 90%;">
+          <img loading="lazy" src="results/multi_concepts/08.png" style="width: 90%;">
+          <img loading="lazy" src="results/multi_concepts/09.png" style="width: 90%;">
+          <img loading="lazy" src="results/multi_concepts/10.png" style="width: 90%;">
+          <img loading="lazy" src="results/multi_concepts/11.png" style="width: 90%;">
+          <img loading="lazy" src="results/multi_concepts/12.png" style="width: 90%;">
+        </div>
+      </div>
+    </div> 
+  </div>
+</section>
+
+<section class="section hero is-light is-small is-centered" style="align-content: center;">
+  <div class="container is-max-desktop">
+  <div class="columns is-centered has-text-centered">
+    <div class="column is-four-fifths">
+      <h2 class="title is-3">Try Me</h2>
+      <p>Click on the highlighted words in the prompt below to select a concept.</p>
+      <br />
+      <div class="row">
+        <div class="col-7">
+            <p style="width: 90%; height: 1em;"></p>
+            <img loading="lazy" id="try-me-image">
+        </div>
+        <div class="col-5 align-self-center">
+          <div class="row">
+            <div class="col-6">
+                <div class="row">
+                    <p style="width: 90%;">Doll</p>
+                    <img id="selected-doll" src="static/images/interactive/concepts/concept-6.jpg" style="width: 90%; padding:2px;">
+                </div>
+                <div class="row">
+                    <p style="width: 90%;">Shirt</p>
+                    <img id="selected-shirt" src="static/images/interactive/concepts/concept-2.jpg" style="width: 90%; padding:2px;">
+                </div>
+            </div>
+            <div class="col-6">
+                <div class="row">
+                    <p style="width: 90%;">Glasses</p>
+                    <img id="selected-glasses" src="static/images/interactive/concepts/concept-41.jpg" style="width: 90%; padding:2px;">
+                </div>
+                <div class="row">
+                    <p style="width: 90%;">Necklace</p>
+                    <img id="selected-necklace" src="static/images/interactive/concepts/concept-126.jpg" style="width: 90%; padding:2px;">
+                </div>
+            </div>
+            </div>
+        </div>
+      </div>
+      <br />
+      <div class="content has-text-justified is-centered">
+        <p class="prompt" style="text-align: center;font-family: monospace;font-size:130%;">
+            A 
+            <a id='doll' tabindex="0"  data-toggle="popover" data-html="true" data-placement="top" data-content="<div>Choose a doll></div>" style="text-decoration: underline; font-weight: bold;">doll</a> wearing a 
+            <a id='shirt' tabindex="1"  data-toggle="popover" data-html="true" data-placement="top" data-content="<div>Choose a shirt</div>" style="text-decoration: underline; font-weight: bold;">shirt</a>, 
+            <a id='glasses' tabindex="2"  data-toggle="popover" data-html="true" data-placement="top" data-content="<div>Choose glasses</div>" style="text-decoration: underline; font-weight: bold;">glasses</a> and 
+            <a id='necklace' tabindex="3"  data-toggle="popover" data-html="true" data-placement="top" data-content="<div>Choose a necklace</div>" style="text-decoration: underline; font-weight: bold;">necklace</a> in the beach.
+        </p>
+        <br>
+      </div>
+    </div>
+  </div>
+</div>
+</section>
+
+
+<section class="section hero is-small is-centered" style="align-content: center;">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+    <div class="column is-four-fifths">
+      <h2 class="title is-3">Method</h2>
+      <img loading="lazy" src="static/images/method.png">
+      <div class="content has-text-justified is-centered">
+        <br />
+        <p>
+        Our method leverages the exisitng modulation mechanism in DiT models to extract concept specific information from user provided images.
+        </p>
+        <p>
+        (a) A pre-trained text-to-image DiT model processes both image and text tokens via a series of DiT blocks. Each block consists of modulation, attention and feed-forward modules.  We focus on the modulation block, in which the tokens are modulated via a vector y, which is derived from a  pooled text embedding. 
+        </p>
+        <p>
+        (b) In our TokenVerse method, given a concept image and its corresponding caption, we learn a personalized modulation vector adjustment delta for each text embedding. These adjustments represent personalized directions in the modulation space and are learned using a simple reconstruction objective. 
+        </p>
+        <p>
+        (c) At inference, the pre-learned direction vectors are added to the text embeddings, enabling injection of personalized concepts into the generated images.
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+</section>
+
+
+<section class="section gray-bg carousel-sec">
+  <div class="container is-max-desktop is-centered has-text-centered">
+    <div class="container is-max-desktop">
+		  <h3 class="title is-3">Abstract Concepts</h3>
+		  <div class="hero-body">
+			  <h4 class="title is-4">Lighting</h3>
+        <div id="results-carousel" class="carousel results-carousel" data-slides-to-show="1">
+          <img src="results/light_pose_material/light-1.png" style="width: 90%;">
+          <img loading="lazy" src="results/light_pose_material/light-2.png" style="width: 90%;">
+          <img loading="lazy" src="results/light_pose_material/light-3.png" style="width: 90%;">
+        </div>
+        
+			  <br/>
+			  <br/>
+
+			  <h4 class="title is-4">Posing</h3>
+        <div id="results-carousel" class="carousel results-carousel" data-slides-to-show="1">
+          <img src="results/light_pose_material/pose-1.png" style="width: 90%;">
+          <img loading="lazy" src="results/light_pose_material/pose-2.png" style="width: 90%;">
+          <img loading="lazy" src="results/light_pose_material/pose-3.png" style="width: 90%;">
+        </div>
+
+			  <br/>
+			  <br/>
+
+	      <h4 class="title is-4">Texture</h3>
+        <div id="results-carousel" class="carousel results-carousel" data-slides-to-show="1">
+          <img loading="lazy" src="results/light_pose_material/tex-1.png" style="width: 90%;">
+          <img src="results/light_pose_material/tex-2.png" style="width: 90%;">
+          <img src="results/light_pose_material/tex-3.png" style="width: 90%;">
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section carousel-sec">
+  <div class="container is-max-desktop is-centered has-text-centered">
+    <div class="container is-max-desktop">
+		  <h3 class="title is-3">Combining Abstract and Objects Concepts</h3>
+		  <div class="hero-body">
+        <br /> <br />
+        <div id="results-carousel" class="carousel results-carousel" data-slides-to-show="1">
+          <img src="results/comb/6.png" style="width: 90%;">
+          <img loading="lazy" src="results/comb/1.png" style="width: 90%;">
+          <img loading="lazy" src="results/comb/2.png" style="width: 90%;">
+          <img loading="lazy" src="results/comb/3.png" style="width: 90%;">
+          <img loading="lazy" src="results/comb/4.png" style="width: 90%;">
+          <img loading="lazy" src="results/comb/5.png" style="width: 90%;">
+          <img loading="lazy" src="results/comb/7.png" style="width: 90%;">
+          <img loading="lazy" src="results/comb/8.png" style="width: 90%;">
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="section hero is-light">
+  <div class="container is-max-desktop is-centered has-text-centered">
+    <h3 class="title is-3">StoryTelling</h3>
+    <div class="content has-text-justified is-centered">
+        <br />
+        An immediate application of TokenVerse is storytelling, where one can generate a narrative consisting of images featuring the same objects and scenes.
+      </div>
+    <img loading="lazy" src="results/storytelling/storytelling_fig.png" style="width: 90%;">
+  </div>
+</div>
+</div>
+</section>
+
+
+<!-- <section class="section is-light" id="BibTeX">
+  <div class="container is-max-desktop content">
+    <h2 class="title">BibTeX</h2>
+    <pre><code>
+      @misc{garibi2025tokenverseversatilemulticonceptpersonalization,
+        title={TokenVerse: Versatile Multi-concept Personalization in Token Modulation Space}, 
+        author={Daniel Garibi and Shahar Yadin and Roni Paiss and Omer Tov and Shiran Zada and Ariel Ephrat and Tomer Michaeli and Inbar Mosseri and Tali Dekel},
+        year={2025},
+        eprint={2501.12224},
+        archivePrefix={arXiv},
+        primaryClass={cs.CV},
+        url={https://arxiv.org/abs/2501.12224}, 
+      }
+    </code></pre>
+  </div>
+</section> -->
+
+
+<footer class="footer">
+  <div class="container">
+    <div class="content has-text-centered">
+    </div>
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <div class="content">
+          <p>
+            This website is licensed under a <a rel="license"
+                                                href="http://creativecommons.org/licenses/by-sa/4.0/">Creative
+            Commons Attribution-ShareAlike 4.0 International License</a>.
+          </p>
+          <p>
+            Website source code based on the <a href="https://nerfies.github.io/">Nerfies</a> project page. If you want to reuse their <a href="https://github.com/nerfies/nerfies.github.io">source code</a>, please credit them appropriately.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
